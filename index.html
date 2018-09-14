@@ -21,15 +21,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather PWA</title>
+  <title>Weather Costa Rica</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
-  <!-- TODO add manifest here -->
+  <!-- manifest -->
   <link rel="manifest" href="/manifest.json">
+  
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="apple-mobile-web-app-title" content="Weather Costa Rica">
   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
@@ -38,7 +39,7 @@
 
   <!-- the header with refresh/add buttons -->
   <header class="header">
-    <h1 class="header__title">Weather PWA</h1>
+    <h1 class="header__title">Weather Costa Rica</h1>
     <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
     <button id="butAdd" class="headerButton" aria-label="Add"></button>
   </header>
@@ -151,16 +152,54 @@
       <div class="dialog-body">
         <select id="selectCityToAdd">
           <!-- Values map to Yahoo Weather API Where On Earth Identifiers (WOEIDs).
-               https://developer.yahoo.com/weather/documentation.html#req -->
-          <option value="2357536">Austin, TXX</option>
-          <option value="59426">San Jose, CR</option>
-          <option value="58298">Escazu, CR</option>
-          <option value="2367105">Boston, MA</option>
-          <option value="2379574">Chicago, IL</option>
-          <option value="2459115">New York, NY</option>
-          <option value="2475687">Portland, OR</option>
-          <option value="2487956">San Francisco, CA</option>
-          <option value="2490383">Seattle, WA</option>
+               https://developer.yahoo.com/weather/documentation.html#req
+               http://www.woeidlookup.com/ -->
+          <option value='58113'>Abangares, GU</option>
+          <option value='58576'>Acosta, SJ</option>
+          <option value='26809197'>Alajuela, AL</option>
+          <option value='59425'>Atenas, AL</option>
+          <option value='59430'>Barva, HE</option>
+          <option value='57943'>Canas, GU</option>
+          <option value='57999'>Cartago, CA</option>
+          <option value='58863'>Corredores, PU</option>
+          <option value='59602'>Coto Brus, PU</option>
+          <option value='26808803'>Dota , SJ</option>
+          <option value='26809184'>El Guarco, CA</option>
+          <option value='58298'>Escazu, SJ</option>
+          <option value='59142'>Golfito, PU</option>
+          <option value='26809195'>Grecia, AL</option>
+          <option value='58577'>La Cruz, GU</option>
+          <option value='59515'>Leon Cortes, SJ</option>
+          <option value='58660'>Liberia, GU</option>
+          <option value='59143'>Limon, LI</option>
+          <option value='58706'>Los Chiles, AL</option>
+          <option value='59182'>Manuel Antonio, PU</option>
+          <option value='22723732'>Montes de Oca, SJ</option>
+          <option value='59518'>Nandayure, GU</option>
+          <option value='59465'>Naranjo, AL</option>
+          <option value='58865'>Nicoya, GU</option>
+          <option value='26808833'>Osa Peninsula, PU</option>
+          <option value='58893'>Paraiso, CA</option>
+          <option value='59400'>Perez Zeledon, SJ</option>
+          <option value='26808838'>Poas, AL</option>
+          <option value='59826'>Pococi, LI</option>
+          <option value='59157'>Puntarenas, PU</option>
+          <option value='58343'>San Carlos, AL</option>
+          <option value='26808843'>San Isidro, HE</option>
+          <option value='59426'>San Jose, SJ</option>
+          <option value='59512'>San Pablo, HE</option>
+          <option value='59609'>Santa Ana, SJ</option>
+          <option value='26809289'>Santa Cruz, GU</option>
+          <option value='59153'>Sarapiqui, HE</option>
+          <option value='59731'>Siquirres, LI</option>
+          <option value='59152'>Talamanca, LI</option>
+          <option value='59489'>Tarrazu, SJ</option>
+          <option value='59807'>Tilaran, GU</option>
+          <option value='59862'>Turrialba, CA</option>
+          <option value='59514'>Turrubares, SJ</option>
+          <option value='59427'>Upala, AL</option>
+          <option value='59395'>Vasquez de Coronado, SJ</option>
+
         </select>
       </div>
       <div class="dialog-buttons">
@@ -176,7 +215,6 @@
     </svg>
   </div>
 
-  <!-- Uncomment the line below when ready to test with fake data -->
   <script src="scripts/app.js" async></script>
 
 </body>
